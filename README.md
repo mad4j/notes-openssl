@@ -1,27 +1,28 @@
 # Ricette per OpenSSL
 simple tasks using openssl library
 
-## Verificare la versione di OpenSSL in uso
+## Verificare la versione di OpenSSL in uso:
 
 `$ openssl version`
 
-## Creazione di una coppia di chiavi privata/pubblica
+## Creazione di una coppia di chiavi privata/publica
 
-Generare una coppia di chiavi di 2048 bits in formato PEM (non cifrato)
+Generare una coppia di chiavi di 2048 bits in formato PEM (non cifrato):
 
 `$ openssl genrsa -out kes.pem 20148`
 
-Generare una coppia di chiavi di 2048 bits in formato PEM (cifrato usando AES256 CBC).
-Viene richiesto di inserire una password per la cifratura del file.
+Generare una coppia di chiavi di 2048 bits in formato PEM (cifrato usando AES256 CBC):
 
 `$ openssl genrsa -aes256 -out keys.pem 20148`
 
-Visualizzare opzioni riguardanti la generazione di chiavi private/pubbliche
+viene richiesto di inserire una password per la cifratura del file.
+
+Visualizzare opzioni riguardanti la generazione di chiavi private/publiche
 
 `$ openssl genrsa help`
 
 
-## Esporare una chiave pubblica
+## Esportare una chiave publica
 
 `openssl rsa -in keys.pem -outform PEM -pubout -out public.pem`
 
