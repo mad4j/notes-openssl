@@ -1,9 +1,15 @@
 # Ricette per OpenSSL
 simple tasks using openssl library
 
-## Verificare la versione di OpenSSL in uso:
+## Verificare la versione di OpenSSL in uso
+
+Per ottenere una infomrazione sintetica sulla versione attualmente installata:
 
 `$ openssl version`
+
+Per ottenere informazionei piu' dettagliate:
+
+`$ openssl version -a`
 
 ## Creazione di una coppia di chiavi privata/publica
 
