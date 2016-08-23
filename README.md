@@ -1,5 +1,9 @@
-# openssl-tutorial
+# Ricette per OpenSSL
 simple tasks using openssl library
+
+## Verificare la versione di OpenSSL in uso
+
+`$ openssl version`
 
 ## Creazione di una coppia di chiavi privata/pubblica
 
