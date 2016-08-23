@@ -11,7 +11,7 @@ Per ottenere informazionei piu' dettagliate:
 
 `$ openssl version -a`
 
-## Creazione di una coppia di chiavi privata/publica
+## Creazione di una coppia di chiavi privata/pubblica
 
 Generare una coppia di chiavi di 2048 bits in formato PEM (non cifrato):
 
@@ -23,12 +23,12 @@ Generare una coppia di chiavi di 2048 bits in formato PEM (cifrato usando AES256
 
 viene richiesto di inserire una password per la cifratura del file.
 
-Visualizzare opzioni riguardanti la generazione di chiavi private/publiche
+Visualizzare opzioni riguardanti la generazione di chiavi private/pubbliche
 
 `$ openssl genrsa help`
 
 
-## Esportare una chiave publica
+## Esportare una chiave pubblica
 
 `openssl rsa -in keys.pem -outform PEM -pubout -out public.pem`
 
