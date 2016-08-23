@@ -14,8 +14,13 @@ Generare una coppia di chiavi di 2048 bits in formato PEM (non cifrato)
 Generare una coppia di chiavi di 2048 bits in formato PEM (cifrato usando AES256 CBC).
 Viene richiesto di inserire una password per la cifratura del file.
 
-`$ openssl genrsa -aes256 -out kes.pem 20148`
+`$ openssl genrsa -aes256 -out keys.pem 20148`
 
 Visualizzare opzioni riguardanti la generazione di chiavi private/pubbliche
 
 `$ openssl genrsa help`
+
+
+## Esporare una chiave pubblica
+
+`openssl rsa -in keys.pem -outform PEM -pubout -out public.pem`
