@@ -27,7 +27,7 @@ Visualizzare opzioni riguardanti la generazione di chiavi private/pubbliche
 
 Se il file in input `keys.pem` e' cifrato verra' richiesta la password di decifratura.
 
-Se non viene specificato il parametro `-pubout` allora verra' esportata *in chiaro* la chiave privata:
+Se non viene specificato il parametro `-pubout` allora verra' esportata **in chiaro** la chiave privata:
 
 `openssl rsa -in keys.pem -out private.pem -outform PEM`
 
