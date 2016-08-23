@@ -24,3 +24,5 @@ Visualizzare opzioni riguardanti la generazione di chiavi private/pubbliche
 ## Esporare una chiave pubblica
 
 `openssl rsa -in keys.pem -outform PEM -pubout -out public.pem`
+
+Se il file in input `keys.pem` e' cifrato verra' richiesta la password di decifratura.
