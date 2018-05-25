@@ -38,3 +38,19 @@ Se non viene specificato il parametro `-pubout` allora verra' esportata **in chi
 
 `openssl rsa -in keys.pem -out private.pem -outform PEM`
 
+
+
+## Generazione/Verifica firme digitali con algoritmi EC (Elliptic Curves)
+
+Questa sezione descrive come generare e verificare una firma digitale utilizzando algoritmi EC.
+
+
+### Generazione di una chiave privata
+
+Generazione di una chiave privata **in chiaro** utilizzando una delle curve predefinite `prime256v1`:
+
+`$ openssl ecparam -out key.pem -name prime256v1 -genkey`
+
+E' possibile avere la lista delle curve predefinite attraverso questo comando:
+
+`$ openssl ecparam -list_curves`
