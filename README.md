@@ -62,4 +62,15 @@ Da un certifcato contentene una chiave privata e' possibile estrarre solo la chi
 `$ openssl ec in key.pem -pubout -out pubkey.pem`
 
 
+### Firma di un file tramite chiava privata
 
+E' possibile generare la firma di un file di dati partendo da una chiave privata usando il seguente comando:
+
+`$ openssl dgst -sha256 -sign key.pem -out tobesigned.sign tobesigned.txt`
+
+
+### Verifica di una firma tramite chiave pubblica
+
+E' possibile verificare la firma associata ad un file di dati utilizzando una chiave pubblica usando il seguente comando:
+
+`$ openssl dgst -sha256 -verify pubkey.pem -signature tobesigned.sign tobesigned.txt`
