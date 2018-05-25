@@ -54,3 +54,12 @@ Generazione di una chiave privata **in chiaro** utilizzando una delle curve pred
 E' possibile avere la lista delle curve predefinite attraverso questo comando:
 
 `$ openssl ecparam -list_curves`
+
+### Esportazione della chiave pubblica
+
+Da un certifcato contentene una chiave privata e' possibile estrarre solo la chiave pubblica utilizzando il seguente comando:
+
+`$ openssl ec in key.pem -pubout -out pubkey.pem`
+
+
+
