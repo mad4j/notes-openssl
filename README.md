@@ -1,6 +1,9 @@
 # Ricette per OpenSSL
 simple tasks using openssl library
 
+* [Verificare la versione di OpenSSL in uso](verificare-la-versione-di-openssl-in-uso)
+* [Creazione di una coppia di chiavi privata/pubblica](creazione-di-una-coppia-di-chiavi-privata/pubblica)
+
 ## Verificare la versione di OpenSSL in uso
 
 Per ottenere una infomrazione sintetica sulla versione attualmente installata:
