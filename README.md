@@ -60,7 +60,7 @@ E' possibile avere la lista delle curve predefinite attraverso questo comando:
 
 Da un certifcato contentene una chiave privata e' possibile estrarre solo la chiave pubblica utilizzando il seguente comando:
 
-`$ openssl ec in key.pem -pubout -out pubkey.pem`
+`$ openssl ec -in key.pem -pubout -out pubkey.pem`
 
 
 ### Firma di un file tramite chiava privata
