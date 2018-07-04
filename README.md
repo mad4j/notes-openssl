@@ -2,7 +2,7 @@
 simple tasks using openssl library
 
 * [Verificare la versione di OpenSSL in uso](verificare-la-versione-di-openssl-in-uso)
-* [Creazione di una coppia di chiavi privata/pubblica](creazione-di-una-coppia-di-chiavi-privata/pubblica)
+* [Creazione di una coppia di chiavi privata/pubblica](creazione-di-una-coppia-di-chiavi-privatapubblica)
 
 ## Verificare la versione di OpenSSL in uso
 
