@@ -96,3 +96,7 @@ E' possibile verificare la firma associata ad un file di dati utilizzando una ch
 
 ## Generazione di numeri casuali
 
+### Risolvere l'errore "unable to write 'random state'"
+
+Fare riferimento a:
+* https://www.openssl.org/docs/faq.html#USER1
