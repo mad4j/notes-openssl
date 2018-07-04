@@ -1,8 +1,8 @@
 # Ricette per OpenSSL
 simple tasks using openssl library
 
-* [Verificare la versione di OpenSSL in uso](verificare-la-versione-di-openssl-in-uso)
-* [Creazione di una coppia di chiavi privata/pubblica](creazione-di-una-coppia-di-chiavi-privatapubblica)
+* [Verificare la versione di OpenSSL in uso](#verificare-la-versione-di-openssl-in-uso)
+* [Creazione di una coppia di chiavi privata/pubblica](#creazione-di-una-coppia-di-chiavi-privatapubblica)
 
 ## Verificare la versione di OpenSSL in uso
 
@@ -92,3 +92,7 @@ E' possibile generare la firma di un file di dati partendo da una chiave privata
 E' possibile verificare la firma associata ad un file di dati utilizzando una chiave pubblica usando il seguente comando:
 
 `$ openssl dgst -sha256 -verify pubkey.pem -signature tobesigned.sign tobesigned.txt`
+
+
+## Generazione di numeri casuali
+
