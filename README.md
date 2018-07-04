@@ -7,9 +7,23 @@ Per ottenere una infomrazione sintetica sulla versione attualmente installata:
 
 `$ openssl version`
 
+con il seguente risultato:
+
+    OpenSSL 1.0.0 29 Mar 2010
+
 Per ottenere informazionei piu' dettagliate:
 
 `$ openssl version -a`
+
+con il seguente risultato:
+
+    OpenSSL 1.0.0 29 Mar 2010
+    built on: Wed Apr 14 18:16:40 EDT 2010
+    platform: MSys
+    options:  bn(64,32) rc4(4x,int) des(ptr,risc1,16,long) blowfish(idx)
+    compiler: gcc -D_WINDLL -DOPENSSL_PIC -DOPENSSL_THREADS  -DDSO_DLFCN -DHAVE_DLFCN_H -DTERMIOS -DL_ENDIAN -D__CYGWIN__ -fomit-frame-pointer -O3 -march=i386 -mtune=i686 -Wall -DOPENSSL_BN_ASM_PART_WORDS -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT-DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DRMD160_ASM -DAES_ASM -DWHIRLPOOL_ASM
+    OPENSSLDIR: "/var/ssl"
+    engines:  dynamic
 
 ## Creazione di una coppia di chiavi privata/pubblica
 
