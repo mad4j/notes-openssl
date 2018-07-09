@@ -104,13 +104,29 @@ E' possibile generare un numero casuale di un numero di cifre esadecimali a scel
 
 `$ openssl rand -hex 20`
 
+    3c45bd4c3046df2f3bd1d143fae3b04006d31e90
+
 Nello stesso modo e' possibile generare un numero, ma facendo codificare il risultato in base64:
 
 `$ openssl rand -base64 20`
 
     RX2WbgHpXNkb4OnGwN1wTdufF/U=
 
+### Ottenere informazioni sul comando RAND
+
+`$ openssl rand help`
+
+
+
 ### Risolvere l'errore "unable to write 'random state'"
+Usage: rand [options] num
+
+Usage: rand [options] num
+
+
+
+
+
 
 Fare riferimento a:
 * https://www.openssl.org/docs/faq.html#USER1
