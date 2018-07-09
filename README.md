@@ -112,27 +112,15 @@ Nello stesso modo e' possibile generare un numero, ma facendo codificare il risu
 
     RX2WbgHpXNkb4OnGwN1wTdufF/U=
 
+
 ### Ottenere informazioni sul comando RAND
 
 `$ openssl rand help`
 
-
-
-
-
-
-
+    Usage: rand [options] num
 
 
 ### Risolvere l'errore "unable to write 'random state'"
-Usage: rand [options] num
-
-Usage: rand [options] num
-
-
-
-
-
 
 Fare riferimento a:
 * https://www.openssl.org/docs/faq.html#USER1
