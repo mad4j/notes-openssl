@@ -100,11 +100,15 @@ E' possibile verificare la firma associata ad un file di dati utilizzando una ch
 
 ### Generare numeri casuali
 
-E' possibile generare un numero casuale di un numero di cifre a scelta:
+E' possibile generare un numero casuale di un numero di cifre esadecimali a scelta (es. 20 cifre):
 
 `$ openssl rand -hex 20`
 
-    3c45bd4c3046df2f3bd1d143fae3b04006d31e90
+Nello stesso modo e' possibile generare un numero, ma facendo codificare il risultato in base64:
+
+`$ openssl rand -base64 20`
+
+    RX2WbgHpXNkb4OnGwN1wTdufF/U=
 
 ### Risolvere l'errore "unable to write 'random state'"
 
