@@ -118,6 +118,12 @@ Nello stesso modo e' possibile generare un numero, ma facendo codificare il risu
 
 
 
+
+
+
+
+
+
 ### Risolvere l'errore "unable to write 'random state'"
 Usage: rand [options] num
 
