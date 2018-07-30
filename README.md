@@ -135,7 +135,8 @@ E' possibile generare un numero casuale di byte (es. 20 bytes) e leggere il risu
     3c45bd4c3046df2f3bd1d143fae3b04006d31e90
 
 Nello stesso modo e' possibile generare un numero, ma facendo codificare il risultato in base64:
-openssl rand -base64 20`
+
+`openssl rand -base64 20`
 
     RX2WbgHpXNkb4OnGwN1wTdufF/U=
 
