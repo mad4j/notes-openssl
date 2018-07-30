@@ -6,7 +6,11 @@ simple tasks using openssl library
 
 ----
 
-## Verificare la versione di OpenSSL in uso
+## Verificare cosa mi mette a disposizione OpenSSL
+
+### Verificare la versione di OpenSSL in uso
+
+#### Giusto un assaggio
 
 Per ottenere una infomrazione sintetica sulla versione attualmente installata:
 
@@ -15,6 +19,9 @@ Per ottenere una infomrazione sintetica sulla versione attualmente installata:
 con il seguente risultato:
 
     OpenSSL 1.0.0 29 Mar 2010
+
+
+### Qualcosa di piu' dettagliato
 
 Per ottenere informazionei piu' dettagliate:
 
