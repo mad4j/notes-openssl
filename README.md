@@ -123,11 +123,11 @@ E' possibile verificare la firma associata ad un file di dati utilizzando una ch
 `$ openssl dgst -sha256 -verify pubkey.pem -signature tobesigned.sign tobesigned.txt`
 
 
-## Generazione di numeri casuali
+## Lavorare con i numeri casuali
 
-### Generare numeri casuali
+### Generare un numero casuale
 
-E' possibile generare un numero casuale di un numero di cifre esadecimali a scelta (es. 20 cifre):
+E' possibile generare un numero casuale con un numero di cifre esadecimali a scelta (es. 20 cifre):
 
 `$ openssl rand -hex 20`
 
@@ -138,6 +138,10 @@ Nello stesso modo e' possibile generare un numero, ma facendo codificare il risu
 `$ openssl rand -base64 20`
 
     RX2WbgHpXNkb4OnGwN1wTdufF/U=
+
+E' possibile indicare il nome del file dove memorizzare il numero salvato. Molto utile nel caso si voglia memorizzare le cifre in fomrato binario (e.g. senza specificare i parametri `-hex` oppure `-base64`):
+
+`$ openssl rand -out rand.txt 20`
 
 
 ### Ottenere informazioni sul comando RAND
