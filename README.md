@@ -6,13 +6,13 @@ simple tasks using openssl library
 
 ----
 
-## Verificare cosa mi mette a disposizione OpenSSL
+## Verificare la cassetta degli attrezzi
 
-### Verificare la versione di OpenSSL in uso
+### Controllare la versione di OpenSSL in uso
 
 #### Giusto un assaggio
 
-Per ottenere una infomrazione sintetica sulla versione attualmente installata:
+Per ottenere una informazione sintetica sulla versione attualmente installata:
 
 `$ openssl version`
 
