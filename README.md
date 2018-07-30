@@ -36,6 +36,14 @@ con il seguente risultato:
     compiler: gcc -D_WINDLL -DOPENSSL_PIC -DOPENSSL_THREADS  -DDSO_DLFCN -DHAVE_DLFCN_H -DTERMIOS -DL_ENDIAN -D__CYGWIN__ -fomit-frame-pointer -O3 -march=i386 -mtune=i686 -Wall -DOPENSSL_BN_ASM_PART_WORDS -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT-DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DRMD160_ASM -DAES_ASM -DWHIRLPOOL_ASM
     OPENSSLDIR: "/var/ssl"
     engines:  dynamic
+    
+Utilizzare il comando:
+
+`$ openssl version -h[elp]`
+
+per ottenere la lista di opzioni utilizzabili con il comando `version`:
+
+    usage:version -[avbofpd]
 
 ## Creazione di una coppia di chiavi privata/pubblica
 
