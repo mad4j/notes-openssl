@@ -18,7 +18,7 @@ Per ottenere una infomrazione sintetica sulla versione attualmente installata:
 
 con il seguente risultato:
 
-    OpenSSL 1.0.0 29 Mar 2010
+    OpenSSL 1.1.0h  27 Mar 2018
 
 #### Qualcosa di piu' dettagliato
 
