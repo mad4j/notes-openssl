@@ -128,15 +128,14 @@ E' possibile verificare la firma associata ad un file di dati utilizzando una ch
 
 ### Generare un numero casuale
 
-E' possibile generare un numero casuale con un numero di cifre esadecimali a scelta (es. 20 cifre):
+E' possibile generare un numero casuale di byte (es. 20 bytes) e leggere il risultato direttamente sull'output della console:
 
 `$ openssl rand -hex 20`
 
     3c45bd4c3046df2f3bd1d143fae3b04006d31e90
 
 Nello stesso modo e' possibile generare un numero, ma facendo codificare il risultato in base64:
-
-`$ openssl rand -base64 20`
+openssl rand -base64 20`
 
     RX2WbgHpXNkb4OnGwN1wTdufF/U=
 
@@ -144,6 +143,9 @@ E' possibile indicare il nome del file dove memorizzare il numero salvato. Molto
 
 `$ openssl rand -out rand.txt 20`
 
+Il numero generato e' contenuto nel file `rand.txt`:
+    $ cat rand.txt
+    ♀/öìÈ±9ÌÐ8À↕Xk%ºÔ¶Ã"
 
 ### Ottenere informazioni sul comando RAND
 
