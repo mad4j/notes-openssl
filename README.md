@@ -144,12 +144,13 @@ E' possibile indicare il nome del file dove memorizzare il numero salvato. Molto
 `$ openssl rand -out rand.txt 20`
 
 Il numero generato e' contenuto nel file `rand.txt`:
+
     $ cat rand.txt
     ♀/öìÈ±9ÌÐ8À↕Xk%ºÔ¶Ã"
 
 ### Ottenere informazioni sul comando RAND
 
-`$ openssl rand help`
+`$ openssl rand -help`
 
     Usage: rand [options] num
 
