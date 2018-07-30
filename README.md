@@ -42,7 +42,17 @@ Utilizzare il comando:
 
 per ottenere la lista di opzioni utilizzabili con il comando `version`:
 
-    usage:version -[avbofpd]
+    Usage: version [options]
+    Valid options are:
+     -help  Display this summary
+     -a     Show all data
+     -b     Show build date 
+     -d     Show configuration directory
+     -e     Show engines directory
+     -f     Show compiler flags used
+     -o     Show some internal datatype options
+     -p     Show target build platform
+     -v     Show library version
     
 TODO: includere esempio su `openssl list standard-commands`
 
