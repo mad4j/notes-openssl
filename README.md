@@ -53,8 +53,9 @@ per ottenere la lista di opzioni utilizzabili con il comando `version`:
      -o     Show some internal datatype options
      -p     Show target build platform
      -v     Show library version
-    
-TODO: includere esempio su `openssl list standard-commands`
+
+TODO: includere esempio su `openssl help`
+TODO: includere esempio su `openssl list -commands`
 
 ## Creazione di una coppia di chiavi privata/pubblica
 
