@@ -43,6 +43,8 @@ Utilizzare il comando:
 per ottenere la lista di opzioni utilizzabili con il comando `version`:
 
     usage:version -[avbofpd]
+    
+TODO: includere esempio su `openssl -list-standard-commands`
 
 ## Creazione di una coppia di chiavi privata/pubblica
 
