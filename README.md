@@ -20,8 +20,7 @@ con il seguente risultato:
 
     OpenSSL 1.0.0 29 Mar 2010
 
-
-### Qualcosa di piu' dettagliato
+#### Qualcosa di piu' dettagliato
 
 Per ottenere informazionei piu' dettagliate:
 
