@@ -102,7 +102,26 @@ E' possibile avere la lista delle curve predefinite attraverso questo comando:
 
 `$ openssl ecparam -list_curves`
 
-
+```
+  secp112r1 : SECG/WTLS curve over a 112 bit prime field
+  secp112r2 : SECG curve over a 112 bit prime field
+  secp128r1 : SECG curve over a 128 bit prime field
+  secp128r2 : SECG curve over a 128 bit prime field
+  secp160k1 : SECG curve over a 160 bit prime field
+  secp160r1 : SECG curve over a 160 bit prime field
+  secp160r2 : SECG/WTLS curve over a 160 bit prime field
+  secp192k1 : SECG curve over a 192 bit prime field
+  secp224k1 : SECG curve over a 224 bit prime field
+  secp224r1 : NIST/SECG curve over a 224 bit prime field
+  secp256k1 : SECG curve over a 256 bit prime field
+  secp384r1 : NIST/SECG curve over a 384 bit prime field
+  secp521r1 : NIST/SECG curve over a 521 bit prime field
+  prime192v1: NIST/X9.62/SECG curve over a 192 bit prime field
+  prime192v2: X9.62 curve over a 192 bit prime field
+  prime192v3: X9.62 curve over a 192 bit prime field
+ ...
+ ```
+ 
 ### Esportazione della chiave pubblica
 
 Da un certifcato contentene una chiave privata e' possibile estrarre solo la chiave pubblica utilizzando il seguente comando:
