@@ -59,7 +59,13 @@ per ottenere la lista di opzioni utilizzabili con il comando `version`:
 TODO: includere esempio su `openssl help`
 TODO: includere esempio su `openssl list -commands`
 
-## Creazione di una coppia di chiavi privata/pubblica per cifratura RSA
+
+## Gestione cifratura a chiave pubblica/privata con RSA
+
+Questa sezione include alcuni esempi di utilizzo della libreria OpenSSL per effettuare operazioni crittografiche con l'algoritmo RSA.
+
+
+## Creazione di una coppia di chiavi privata/pubblica per algoritmo RSA
 
 Generare una coppia di chiavi di 2048 bits in formato PEM (non cifrato):
 
@@ -71,6 +77,8 @@ Generating RSA private key, 2048 bit long modulus
 ..........................+++
 e is 65537 (0x010001)
 ```
+
+Questo è il contenuto del file generaro.
 
 ```
 $ cat keys.pem
@@ -116,6 +124,8 @@ e is 65537 (0x010001)
 Enter pass phrase for keys.pem:
 Verifying - Enter pass phrase for keys.pem:
 ```
+
+Questo è il contenuto del file generato.
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
@@ -220,6 +230,8 @@ E' possibile avere la lista delle curve predefinite attraverso questo comando:
 Da un certifcato contentene una chiave privata e' possibile estrarre solo la chiave pubblica utilizzando il seguente comando:
 
 `$ openssl ec -in key.pem -pubout -out pubkey.pem`
+
+Questo è il contenuto del file generato.
 
 ```
 cat pubkey.pem
