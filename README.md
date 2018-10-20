@@ -86,7 +86,6 @@ Se non viene specificato il parametro `-pubout` allora verra' esportata **in chi
 `openssl rsa -in keys.pem -out private.pem -outform PEM`
 
 
-
 ## Generazione/Verifica firme digitali con algoritmi EC (Elliptic Curves)
 
 Questa sezione descrive come generare e verificare una firma digitale utilizzando algoritmi EC.
@@ -97,6 +96,18 @@ Questa sezione descrive come generare e verificare una firma digitale utilizzand
 Generazione di una chiave privata **in chiaro** utilizzando una delle curve predefinite `prime256v1`:
 
 `$ openssl ecparam -out key.pem -name prime256v1 -genkey`
+
+```
+$ cat key.pem
+-----BEGIN EC PARAMETERS-----
+BggqhkjOPQMBBw==
+-----END EC PARAMETERS-----
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIJcavj9RiSReqoSvb8Flf1WaFpoYVQWCJEBYY4NcMh2QoAoGCCqGSM49
+AwEHoUQDQgAEzaBK/N8W3mKbOAV2FiZnIDArLfixEKMdAZZ+qIKgaoNVKJwO+q7p
+/MCuCLv9cnu/7OxIQX31lR4ZA/fBxB1How==
+-----END EC PRIVATE KEY-----
+```
 
 E' possibile avere la lista delle curve predefinite attraverso questo comando:
 
@@ -127,6 +138,14 @@ E' possibile avere la lista delle curve predefinite attraverso questo comando:
 Da un certifcato contentene una chiave privata e' possibile estrarre solo la chiave pubblica utilizzando il seguente comando:
 
 `$ openssl ec -in key.pem -pubout -out pubkey.pem`
+
+```
+cat pubkey.pem
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEzaBK/N8W3mKbOAV2FiZnIDArLfix
+EKMdAZZ+qIKgaoNVKJwO+q7p/MCuCLv9cnu/7OxIQX31lR4ZA/fBxB1How==
+-----END PUBLIC KEY-----
+```
 
 
 ### Firma di un file tramite chiava privata
