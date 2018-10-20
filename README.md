@@ -1,4 +1,4 @@
-# Ricette per OpenSSL
+# Appunti sull'utilizzo di OpenSSL
 simple tasks using openssl library
 
 * [Verificare la versione di OpenSSL in uso](#verificare-la-versione-di-openssl-in-uso)
