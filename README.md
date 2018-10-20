@@ -108,6 +108,48 @@ Generare una coppia di chiavi di 2048 bits in formato PEM (cifrato usando AES-25
 
 `$ openssl genrsa -aes256 -out keys.pem 2048`
 
+```
+Generating RSA private key, 2048 bit long modul
+..............................................+++
+......+++
+e is 65537 (0x010001)
+Enter pass phrase for keys.pem:
+Verifying - Enter pass phrase for keys.pem:
+```
+
+```
+-----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: AES-256-CBC,68F49455F4CB3D02925F696168E95317
+
+Mxw9iwkH64kvu03UfMJDquNCsJ+EtAGhDCbWLcrvP6rkPPkBKiXzD0PxopMMPoR8
+lu7MHIDm2yIwLpZc102vTSwPu0ELMP05zYu+Dbt+PkzlV5h9osFru9y4yyRYqqKB
+8pLXGrPCqgKHRgWr607U0Omisc3OTY3GsqT1RFUUJKxdyCE9256UYD9DobQFSbAs
+MiTdgV9UZVyLMdT53Jb+J6jf3IjwAvPkt8He95sI2RXfUPXJ9YO1lafqvnrTlp5/
+MhNffb9Y837CWYaBbCgA5JYvlfPw6J4+biCZspaSraf1YbZHqzcuN2IcAleto7lK
+myJEIx6b9gYOB88D9H+cx6/beXMzslcB1kn9C6N0wafvH3eYX54WFjZbIZy/BA0m
+RAhqpcCE2QNXOdtd3aLKGwRrd9QmZVdpjTiBDGICDeRdr9pbfhMxKoMGCg/6RIDu
+yOA58sbFDTq9XB3wZZ+z6vmMpTsTSycKnfrtTHsGjM1N4AA79ZQFrmEpp5NqSJnv
+aMXg6I3dI4R/YDou0FWdrLHlOXDq1ZZLCfK1tTrCrIZkdCz7eFrQT+qI5mel+90U
+VTbF6IzjUNKH9Y+xITy7N7cqRZPkXhZC9l0I4me7/kLu28ZVgUH9D3uzxhbaA5Vq
+p00zxLVbOKb29BIWZ80JJFiEcLzIg7Eh/0Pm6LAzbcBiZdgWH7Kb1nSWfEjXCAvm
+Z65mFXWwtd8aFyZLm4p9fgRE20yGrFK/De1Z3f2it5PVoa+2H6371nfqYrJ6e6oO
+QaE5xUjsZHF/StgM6j7neJ4NKNY9s52KqR3slXd5cApU1Yuae7LXwhGc4Rn6cvw/
+TtQ7xQ2kMARMuFnkdjw5SkU01RvVZHUJvi02ZwG7h6boOPIq4Hasd3E8jkA5YOCQ
+2gFYbrYIVfjeGTN6yCrWICUHgv+1Tpu/0Ykv13ES8MjvA/PATfD3p2r3bUiEy3Yy
+NKuDUXWYuZeprTcMMn/yuHXUaLGwjbz+6isUT6Rh6bBN90l0rE7zQM0gSZtJTnEM
+oAWoiNnAZwGys+V1rMzjRUn3jWuPft+/EvelHfQjvRuocORyJ9DeGhxFNJFHpn9y
+pAuNjS2LGK/d8xOCaA/LxYCUW0lmuITaoqAkiUrU3URvgw/YCsRqyKR3AM0UF4S4
+wsd+TjLi/aYTvOgxlfPtyo6Y7GFbYgj02pS3cMjwKJP+iUzxe5FpMRamyF7MBoV1
+ZhSs3sKkUhBPfh96ATGBlPrkSqjG6+rGNMHXUMbQyiDHAs7izyyAdsXg6Dlndh8r
+AZ/Vj0qzWm0zSIf39XkyIkTlqPbm1o8mV08gDbcdO6GZjACF+D34uR3YcOYTFIFP
+a+j1Ds5ZucY34xBaSjrmQ8I51m0PDmo9SX2fNGdYBle9QREkpyml1eTzt2daayuc
+NWDDNRBn9xoeLln4krOhvBFJkHJ/RTx5+zbv7lpCWIzerr9WcCRNAUPCMNgxxBgL
+3HSr69rFtICZV98t1pOvh59U0s1oldQUGgdGA0wQxS/19iM9mCCoeC7BcuYss7ag
+2sjtLPAKQOLuiu+f6UvCJVIGza0gC2/RGP2zlRT+fOzQSYP3mj2KiII3117T0c6x
+-----END RSA PRIVATE KEY-----
+```
+
 viene richiesto di inserire una password per la cifratura del file.
 
 Visualizzare opzioni riguardanti la generazione di chiavi private/pubbliche
