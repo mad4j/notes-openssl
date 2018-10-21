@@ -286,7 +286,25 @@ viene richiesto di inserire una password per la cifratura del file.
 
 Visualizzare opzioni riguardanti la generazione di chiavi private/pubbliche
 
-`$ openssl genrsa -h`
+`$ openssl genrsa -help`
+
+Per ottenere il seguente risultato:
+
+```
+Usage: genrsa [options]
+Valid options are:
+ -help         Display this summary
+ -3            Use 3 for the E value
+ -F4           Use F4 (0x10001) for the E value
+ -f4           Use F4 (0x10001) for the E value
+ -out val      Output the key to specified file
+ -rand val     Load the file(s) into the random number generator
+ -passout val  Output file pass phrase source
+ -*            Encrypt the output with any supported cipher
+ -engine val   Use engine, possibly a hardware device
+```
+
+Da osservare che l'opzione `-*` può essere speficata, ad esempio, come `-aes256`.
 
 
 ## Esportare una chiave pubblica
