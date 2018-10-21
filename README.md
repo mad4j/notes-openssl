@@ -55,10 +55,133 @@ per ottenere la lista di opzioni utilizzabili con il comando `version`:
      -o     Show some internal datatype options
      -p     Show target build platform
      -v     Show library version
+     
+### Come ottenere aiuto
 
-TODO: includere esempio su `openssl help`
-TODO: includere esempio su `openssl list -commands`
+Richiedere l'help su linea di comando:
 
+`$ openssl help`
+
+Per ottenere il seguente risultato
+
+```
+Standard commands
+asn1parse         ca                ciphers           cms
+crl               crl2pkcs7         dgst              dhparam
+dsa               dsaparam          ec                ecparam
+enc               engine            errstr            exit
+gendsa            genpkey           genrsa            help
+list              nseq              ocsp              passwd
+pkcs12            pkcs7             pkcs8             pkey
+pkeyparam         pkeyutl           prime             rand
+rehash            req               rsa               rsautl
+s_client          s_server          s_time            sess_id
+smime             speed             spkac             srp
+ts                verify            version           x509
+
+Message Digest commands (see the `dgst' command for more details)
+blake2b512        blake2s256        gost              md4
+md5               rmd160            sha1              sha224
+sha256            sha384            sha512
+
+Cipher commands (see the `enc' command for more details)
+aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb
+aes-256-cbc       aes-256-ecb       base64            bf
+bf-cbc            bf-cfb            bf-ecb            bf-ofb
+camellia-128-cbc  camellia-128-ecb  camellia-192-cbc  camellia-192-ecb
+camellia-256-cbc  camellia-256-ecb  cast              cast-cbc
+cast5-cbc         cast5-cfb         cast5-ecb         cast5-ofb
+des               des-cbc           des-cfb           des-ecb
+des-ede           des-ede-cbc       des-ede-cfb       des-ede-ofb
+des-ede3          des-ede3-cbc      des-ede3-cfb      des-ede3-ofb
+des-ofb           des3              desx              rc2
+rc2-40-cbc        rc2-64-cbc        rc2-cbc           rc2-cfb
+rc2-ecb           rc2-ofb           rc4               rc4-40
+seed              seed-cbc          seed-cfb          seed-ecb
+seed-ofb
+```
+
+### Indagare su cosa è possibile fare
+
+Utilizzare la seguente sequenza di comandi per esplorare cosa sia possibile fare con la libreria
+
+* `openssl -help` - ottenere informazioni di carattere generale
+* `openssl list -help` - ottenere informazioni su quali sono gli argomenti di dettaglio
+* `openssl list -commands` - ottenere la lista degli argomenti di dettaglio (es. *commands*)
+* `openssl seed -help` - ottenere informazioni dettagliate su uno specifico argomento (es. comando *seed*)
+
+Di seguito si possono vedere in dettagloio i risultati di queste operazioni.
+
+Per ottenere la lista dei comandi disponibili:
+
+`$ openssl list -help`
+
+```
+Usage: list [options]
+Valid options are:
+ -help                   Display this summary
+ -commands               List of standard commands
+ -digest-commands        List of message digest commands
+ -digest-algorithms      List of message digest algorithms
+ -cipher-commands        List of cipher commands
+ -cipher-algorithms      List of cipher algorithms
+ -public-key-algorithms  List of public key algorithms
+ -disabled               List of disabled features
+```
+
+Per esempio, ottenere la lista dei comandi più comuni:
+
+`$ openssl list -commands`
+```
+asn1parse         ca                ciphers           cms
+crl               crl2pkcs7         dgst              dhparam
+dsa               dsaparam          ec                ecparam
+enc               engine            errstr            exit
+gendsa            genpkey           genrsa            help
+list              nseq              ocsp              passwd
+pkcs12            pkcs7             pkcs8             pkey
+pkeyparam         pkeyutl           prime             rand
+rehash            req               rsa               rsautl
+s_client          s_server          s_time            sess_id
+smime             speed             spkac             srp
+ts                verify            version           x509
+```
+
+Per avere informazioni più dettagliate su un singolo comando utilizzare (esempio per il comando help):
+
+`$ openssl seed -help`
+
+```
+Usage: seed [options]
+Valid options are:
+ -help          Display this summary
+ -ciphers       List ciphers
+ -in infile     Input file
+ -out outfile   Output file
+ -pass val      Passphrase source
+ -e             Encrypt
+ -d             Decrypt
+ -p             Print the iv/key
+ -P             Print the iv/key and exit
+ -v             Verbose output
+ -nopad         Disable standard block padding
+ -salt          Use salt in the KDF (default)
+ -nosalt        Do not use salt in the KDF
+ -debug         Print debug info
+ -a             Base64 encode/decode, depending on encryption flag
+ -base64        Same as option -a
+ -A             Used with -[base64|a] to specify base64 buffer as a single line
+ -bufsize val   Buffer size
+ -k val         Passphrase
+ -kfile infile  Read passphrase from file
+ -K val         Raw key, in hex
+ -S val         Salt, in hex
+ -iv val        IV in hex
+ -md val        Use specified digest to create a key from the passphrase
+ -none          Don't encrypt
+ -*             Any supported cipher
+ -engine val    Use engine, possibly a hardware device
+```
 
 ## Cifratura a chiave pubblica/privata con RSA
 
