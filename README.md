@@ -14,7 +14,7 @@ daniele.olmlisani@gmail.com
 
 #### Giusto un assaggio
 
-Per ottenere una informazione sintetica sulla versione attualmente installata:
+Per ottenere una informazione sintetica sulla versione attualmente in uso:
 
 `$ openssl version`
 
@@ -24,7 +24,7 @@ con il seguente risultato:
 
 #### Qualcosa di piu' dettagliato
 
-Per ottenere informazionei piu' dettagliate:
+Per ottenere informazioni più dettagliate:
 
 `$ openssl version -a`
 
@@ -60,14 +60,13 @@ TODO: includere esempio su `openssl help`
 TODO: includere esempio su `openssl list -commands`
 
 
-## Gestione cifratura a chiave pubblica/privata con RSA
+## Cifratura a chiave pubblica/privata con RSA
 
-Questa sezione include alcuni esempi di utilizzo della libreria OpenSSL per effettuare operazioni crittografiche con l'algoritmo RSA.
+Questo capitolo mostra alcune delle operazioni più comuni che possono essere eseguite con l'algoritmo RSA.
 
+## Creazione di una coppia di chiavi pubblica/privata per algoritmo RSA
 
-## Creazione di una coppia di chiavi privata/pubblica per algoritmo RSA
-
-Generare una coppia di chiavi di 2048 bits in formato PEM (non cifrato):
+Generare una coppia di chiavi di 2048 bits in formato PEM non cifrato:
 
 `$ openssl genrsa -out keys.pem 2048`
 
